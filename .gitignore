@@ -1,0 +1,9 @@
+*
+!/app
+!/app/*/
+!/app/code/**
+!/app/etc/**
+!/bin
+!/bin/*
+!.gitignore
+!README.md

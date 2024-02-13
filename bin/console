@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+try {
+    require realpath(__DIR__) . '/../app/bootstrap.php';
+} catch (\Exception $e) {
+    echo 'Autoload error';
+    exit(1);
+}
+
+// start bootstrap console application wrapper
+use Semajo\Project\Console;
+Console::run();
