@@ -46,7 +46,7 @@ class Console
     private static function init(): Runner
     {
         // Create symfony application
-        self::$config = Robo::createConfiguration(['./../etc/config.yaml']);
+        self::$config = Robo::createConfiguration([__DIR__ . '/../etc/config.yaml']);
         $application = new Application(self::$config->get('appName'), self::$config->get('appVersion'));
 
         // Create and configure container
